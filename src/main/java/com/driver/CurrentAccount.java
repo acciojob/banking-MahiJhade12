@@ -73,7 +73,7 @@ public class CurrentAccount extends BankAccount{
         }
 
         StringBuilder sb = new StringBuilder();
-    /*      while (!pq.isEmpty()) {
+        while (!pq.isEmpty()) {
             int[] cur = pq.poll();
             //in this case we use most frequent char
             if (sb.length() == 0 || sb.charAt(sb.length() - 1) != (char)cur[1]) {
@@ -93,7 +93,7 @@ public class CurrentAccount extends BankAccount{
                 //put back most frequent one for next iterations
                 pq.add(cur);
             }
-        }*/
+        }
         return sb.toString();
     }
 }
