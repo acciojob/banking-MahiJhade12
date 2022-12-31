@@ -39,8 +39,7 @@ public class Main {
             System.out.println(account4.generateAccountNumber(6,16));
         } catch (Exception e) {
             throw new RuntimeException(e);
-        }
+        }*/
  //////
     }
 }
-*/
