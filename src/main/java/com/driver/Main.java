@@ -2,7 +2,7 @@ package com.driver;
 
 public class Main {
     public static void main(String[] args) {
-        BankAccount b=new BankAccount("mahima",400,200);
+       /* BankAccount b=new BankAccount("mahima",400,200);
         try {
             System.out.println(b.generateAccountNumber(9,9));
         } catch (Exception e) {
@@ -43,3 +43,4 @@ public class Main {
  //////
     }
 }
+*/
