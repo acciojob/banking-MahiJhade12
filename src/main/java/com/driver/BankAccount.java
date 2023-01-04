@@ -1,6 +1,4 @@
 package com.driver;
-
-
 public class BankAccount {
         private String name;
         private double balance;
@@ -32,7 +30,6 @@ public class BankAccount {
         public double getMinBalance() {
                 return minBalance;
         }
-
 
         public String generateAccountNumber(int digits, int sum) throws Exception {
                 // Each digit of an account number can lie between 0 and 9 (both inclusive)
@@ -91,21 +88,23 @@ public class BankAccount {
                                 } catch (Exception e) {
                                         System.out.println(e);
                                         // Remember to throw "Insufficient Balance" exception, if the remaining amount would be less than minimum balance
-                                        if (balance - amount < minBalance) {
+                                        if(balance-amount < minBalance){
                                                 throw new Exception("Insufficient Balance");
-                                        } else balance -= amount;
+                                        }
+                                        else balance-= amount;
                                 }
-                                public String createAccountNumber ( int digits, int sum){
+                                public String createAccountNumber(int digits, int sum){
 
                                         StringBuilder retNumber = new StringBuilder("");
 
-                                        while (digits > 0) {
-                                                if (sum > 9) {
+                                        while(digits > 0){
+                                                if(sum > 9){
                                                         retNumber.append('9');
                                                         sum -= 9;
-                                                } else {
-                                                        retNumber.append((char) (sum + '0'));
-                                                        sum = 0;
+                                                }
+                                                else{
+                                                        retNumber.append((char)(sum+'0'));
+                                                        sum= 0;
                                                 }
                                         }
                                         return String.valueOf(retNumber);

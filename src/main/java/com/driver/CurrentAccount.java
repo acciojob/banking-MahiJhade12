@@ -1,11 +1,5 @@
 package com.driver;
 
-import jdk.jshell.spi.ExecutionControl;
-
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
-
 public class CurrentAccount extends BankAccount {
     String tradeLicenseId; // consists of Uppercase English characters only
     public class CurrentAccount extends BankAccount{
